@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wKt-hH-58N" customClass="CryptoTableViewCell" customModule="CryptoMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cff-y8-eJh">
+                    <rect key="frame" x="8" y="26" width="150" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="BEg-5W-IYg"/>
+                        <constraint firstAttribute="width" constant="150" id="dh7-Bn-c0r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhL-3G-qa7">
+                    <rect key="frame" x="8" y="60" width="295" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="CCw-P3-tZe"/>
+                        <constraint firstAttribute="width" constant="42" id="k33-i6-gjG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="OUq-NC-W1X"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Cff-y8-eJh" firstAttribute="leading" secondItem="wKt-hH-58N" secondAttribute="leading" constant="8" id="1ZL-Ld-XQ1"/>
+                <constraint firstItem="Cff-y8-eJh" firstAttribute="top" secondItem="wKt-hH-58N" secondAttribute="top" constant="26" id="35r-mF-ioL"/>
+                <constraint firstItem="UhL-3G-qa7" firstAttribute="top" secondItem="OUq-NC-W1X" secondAttribute="top" constant="16" id="JPY-GP-RQO"/>
+                <constraint firstAttribute="trailing" secondItem="Cff-y8-eJh" secondAttribute="trailing" constant="128" id="LNw-Pq-c6e"/>
+                <constraint firstItem="UhL-3G-qa7" firstAttribute="leading" secondItem="OUq-NC-W1X" secondAttribute="leading" constant="8" id="Nhw-oO-DOf"/>
+                <constraint firstItem="OUq-NC-W1X" firstAttribute="trailing" secondItem="UhL-3G-qa7" secondAttribute="trailing" constant="128" id="clf-7N-q20"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="currencyText" destination="Cff-y8-eJh" id="YrI-mH-Bef"/>
+                <outlet property="priceText" destination="UhL-3G-qa7" id="cvz-hU-hcI"/>
+            </connections>
+            <point key="canvasLocation" x="-665.94202898550725" y="-291.62946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
